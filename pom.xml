@@ -39,6 +39,7 @@
                 <activeByDefault>true</activeByDefault>
             </activation>
             <modules>
+                <module>protocol</module>
                 <module>grid-dashboard-frontend</module>
             </modules>
         </profile>

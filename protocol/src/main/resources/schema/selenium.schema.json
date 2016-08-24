@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "event": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "integer"
+    },
+    "attributes": {
+      "type": "object",
+      "properties": {
+        "uid": {
+          "type": "string"
+        },
+        "requestType": {
+          "type": "string"
+        },
+        "sessionKey": {
+          "type": "string"
+        },
+        "uri": {
+          "type": "string"
+        },
+        "clientIp": {
+          "type": "string"
+        },
+        "body": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "uid",
+        "requestType",
+        "sessionKey",
+        "uri",
+        "clientIp",
+        "body"
+      ]
+    }
+  },
+  "required": [
+    "event",
+    "timestamp",
+    "attributes"
+  ]
+}
